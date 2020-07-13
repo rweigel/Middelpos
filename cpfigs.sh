@@ -1,4 +1,6 @@
 cp ../map/map.pdf figures/
+cp ../figures/Middelpos/timeseries.pdf figures/Middelpos
+
 cp ../figures/KAP103/timeseries.pdf figures/KAP103
 cp ../figures/KAP103/SN_compare-E_x.pdf figures/KAP103
 cp ../figures/KAP103/SN_compare-E_y.pdf figures/KAP103
