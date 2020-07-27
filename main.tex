@@ -19,7 +19,6 @@
 
 %The Laboratory for Electromagnetic Innovations (LEMI) is hereby acknowledged for the use of the  magnetotelluric (MT) processing software made available to SANSA Space Science in Hermanus”.
 
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{figures/map.pdf}
@@ -34,7 +33,7 @@
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{figures/KAP103/timeseries.pdf}
-\caption{5-second-cadence measurements from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}.}
+\caption{5-second-cadence measurements from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See also Jones et al. (2009).}
 \label{fig:KAP103_timeseries}
 \end{figure}
 
@@ -46,23 +45,20 @@ Legend labels
 
     \item OLS 26 1-day segments - Average of 26 1-day TF estimates. Time series data used for calculation are at 5-second cadence from a LEMI-417M unit. Transfer function estimates were made using the standard OLS method in the frequency domain using logarithmically spaced evaluation frequencies (indicated by dots in the following figures).
 
-    \item OLS One 26-day segment - TF computed using full 26-day time span of available data. Time series data and method used is the same as above.
+    %\item OLS One 26-day segment - TF computed using full 26-day time span of available data. Time series data and method used is the same as above.
 
-    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program using sub-millisecond data (not available).
+    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program (Chave and Thomson, 2004) using sub-millisecond data. TFs from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See also Jones et al. (2009).
 
 \end{itemize}
+
+\clearpage
+
+\subsection{$E_x$ response}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{figures/KAP103/SN_compare-E_x.pdf}
 \caption{(top) Signal to Error ratio versus period. The signal is the raw spectrum of the 5-second cadence measured $E_x$ averaged in bins centered on the evaluation frequencies used for the TF estimates. The error spectrum was computed by first computing the difference between the 5-second cadence predicted and measured $E_x$ and then computing its raw spectrum and averaging in bins centered on the evaluation frequencies used for the TF estimates. The ratio of these signal and error spectra are shown. (bottom) Coherence averaged in bins centered on the evaluation frequencies used for the TF estimates.}
-\label{fig:universe}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103/SN_compare-E_y.pdf}
-\caption{Signal to Error and coherence for $E_y$.}
 \label{fig:universe}
 \end{figure}
 
@@ -74,7 +70,6 @@ Legend labels
 \caption{}
 \end{figure}
 
-
 \clearpage
 
 \begin{figure}[h!]
@@ -83,6 +78,19 @@ Legend labels
 \caption{}
 \label{fig:universe}
 \end{figure}
+
+\clearpage
+
+\subsection{$E_y$ response}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{figures/KAP103/SN_compare-E_y.pdf}
+\caption{Signal to Error and coherence for $E_y$.}
+\label{fig:universe}
+\end{figure}
+
+\clearpage
 
 \begin{figure}[h!]
 \centering
@@ -99,60 +107,5 @@ Legend labels
 \end{figure}
 
 \clearpage
-
-\section{Middelpos/KAP103 comparison}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/Middelpos/timeseries.pdf}
-\caption{1-second-cadence measurements from a LEMI-417M unit in Middelpos, South Africa}
-\label{fig:Middelpos_timeseries}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/SN_compare-E_x.pdf}
-\caption{}
-\label{fig:SN_Ex_Compare}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/SN_compare-E_y.pdf}
-\caption{}
-\label{fig:universe}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/transferfnZ_compare-Z_xx_Magnitude_Phase.pdf}
-\caption{}
-\label{fig:universe}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/transferfnZ_compare-Z_xx_Magnitude_Phase.pdf}
-\caption{}
-\label{fig:universe}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/transferfnZ_compare-Z_xx_Magnitude_Phase.pdf}
-\caption{}
-\label{fig:universe}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{figures/KAP103_Middelpos/transferfnZ_compare-Z_xx_Magnitude_Phase.pdf}
-\caption{}
-\label{fig:universe}
-\end{figure}
 
 \end{document}
