@@ -13,8 +13,6 @@
 
 \begin{document}
 
-\todo[inline]{Here's an inline comment.}
-
 \section{Introduction}
 
 %The Laboratory for Electromagnetic Innovations (LEMI) is hereby acknowledged for the use of the  magnetotelluric (MT) processing software made available to SANSA Space Science in Hermanus”.
@@ -22,13 +20,9 @@
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{figures/map.pdf}
-\caption{Location of Middelpos [$-31.544^\circ$, $20.141^\circ$] and KAP103 [$-32.139^\circ$, $20.468^\circ$] MT stations. Relief map is from \href{ngdc.noaa.gov/mgg/global/global.html}{the ETOPO1 Global Relief Model} and the Cape Fold Belt line was derived from digitization of Figure 1. of \href{https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2000GL012587}{Nguuri et al., 2001}.}
+\caption{Location of Middelpos [$-31.544^\circ$, $20.141^\circ$] and KAP103 [$-32.139^\circ$, $20.468^\circ$] MT stations. Relief map is from \href{http://ngdc.noaa.gov/mgg/global/global.html}{the ETOPO1 Global Relief Model} and the Cape Fold Belt line was derived from digitization of Figure 1. of \href{https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2000GL012587}{Nguuri et al., 2001}.}
 \label{fig:map}
 \end{figure}
-
-\clearpage
-
-\section{KAP103 comparison}
 
 \begin{figure}[h!]
 \centering
@@ -39,15 +33,15 @@
 
 \clearpage
 
+\section{Results}
+
 Legend labels
 
 \begin{itemize}
 
-    \item OLS 26 1-day segments - Average of 26 1-day TF estimates. Time series data used for calculation are at 5-second cadence from a LEMI-417M unit. Transfer function estimates were made using the standard OLS method in the frequency domain using logarithmically spaced evaluation frequencies (indicated by dots in the following figures).
+    \item OLS 26 1-day segments - Average of 26 1-day TF estimates. Transfer function estimates were made using the standard OLS method in the frequency domain using logarithmically spaced evaluation frequencies (indicated by dots in the following figures). Similar results were obtained using the (robust) transfer function estimate program provided with a LEMI instrument and our own implementation of robust regression with a hard cut-off bast on the MT literature.
 
-    %\item OLS One 26-day segment - TF computed using full 26-day time span of available data. Time series data and method used is the same as above.
-
-    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program (Chave and Thomson, 2004) using sub-millisecond data. TFs from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See also Jones et al. (2009).
+    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program (Chave and Thomson, 2004), apparently derived using measurements at $\sim$10-second cadence. TFs were obtained from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See Jones et al. (2009) for documentation on the calculation.
 
 \end{itemize}
 
@@ -58,7 +52,7 @@ Legend labels
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{figures/KAP103/SN_compare-E_x.pdf}
-\caption{(top) Signal to Error ratio versus period. The signal is the raw spectrum of the 5-second cadence measured $E_x$ averaged in bins centered on the evaluation frequencies used for the TF estimates. The error spectrum was computed by first computing the difference between the 5-second cadence predicted and measured $E_x$ and then computing its raw spectrum and averaging in bins centered on the evaluation frequencies used for the TF estimates. The ratio of these signal and error spectra are shown. (bottom) Coherence averaged in bins centered on the evaluation frequencies used for the TF estimates.}
+\caption{(top) Signal to Error ratio versus period. The signal spectrum is the raw spectrum of the 5-second cadence $E_x$ averaged in bins centered on the evaluation frequencies used for the TF estimates (indicated by dots). The error spectrum is the raw spectrum of the difference between the 5-second cadence $E_x$ and that predicted using the TF averaged in the same way as the signal spectrum. The ratio of these spectra at each evaluation frequency is shown. (bottom) Coherence averaged in bins centered on the evaluation frequencies used for the TF estimates.}
 \label{fig:universe}
 \end{figure}
 
