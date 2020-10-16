@@ -33,15 +33,15 @@
 
 \clearpage
 
-\section{Results}
+\section{Results - KAP103 TFs only}
 
 Legend labels
 
 \begin{itemize}
 
-    \item OLS 26 1-day segments - Average of 26 1-day TF estimates. Transfer function estimates were made using the standard OLS method in the frequency domain using logarithmically spaced evaluation frequencies (indicated by dots in the following figures). Similar results were obtained using the (robust) transfer function estimate program provided with a LEMI instrument (version 1.4.0) and our own implementation of robust regression with a hard cut-off. Error bars correspond to 95\% confidence limits computed using 1000 bootstrap samples of the 26 values.
+    \item OLS 26 1-day segments - Average of 26 1-day TF estimates. Transfer function estimates were made using the standard OLS method in the frequency domain using logarithmically spaced evaluation frequencies (indicated by dots in the following figures). Similar results were obtained using the (robust) transfer function estimate program provided with a LEMI instrument and our own implementation of robust regression with a hard cut-off bast on the MT literature.
 
-    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program (Chave and Thomson, 2004), apparently derived using measurements at $\sim$10-millisecond cadence. TFs were obtained from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See Jones et al. (2009) for documentation on the calculation.
+    \item BIRRP - TF estimate derived using the Bounded Influence Remote Reference Program (Chave and Thomson, 2004), apparently derived using measurements at $\sim$10-second cadence. TFs were obtained from the \href{https://www.mtnet.info/data/samtex/samtex.html}{MTNet SAMTEX page}; See Jones et al. (2009) for documentation on the calculation.
 
 \end{itemize}
 
@@ -103,6 +103,27 @@ Legend labels
 \clearpage
 
 \section{Results KAP103 and Middelpos TFs}
+
+
+\begin{itemize}
+
+    \item OLS 55 1-day segments - 55 days of data are available from Middelpos. The method used is the same aas that for OLS 26 1-day for KAP103.
+
+    \item OLS 26 1-day segments - Transfer function derived using 26 1-day segments from KAP103 in 2003. See previous section for calculation details.
+    
+    \item BIRRP - Transfer function derived using data from KAP103 in 2003 with the BIRRP algorithm. See previous section for calculation details.
+    
+\end{itemize}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{figures/Middelpos/timeseries.pdf}
+\caption{1-second-cadence measurements from Middelpos.}
+\label{fig:KAP103_timeseries}
+\end{figure}
+
+\clearpage
+
 
 \begin{figure}[h!]
 \centering
